@@ -1,4 +1,4 @@
-# Route Optimizer 📍
+# Route Optimizer
 
 A Python implementation of the Traveling Salesperson Problem (TSP) designed to create optimized itineraries using real-world geographic data.
 
