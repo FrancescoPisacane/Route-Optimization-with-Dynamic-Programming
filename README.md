@@ -45,15 +45,11 @@ This tool computes the most efficient route between multiple locations by solvin
 
 ---
 
-## Technical Specifications
-
-### Algorithm & Complexity
+## Algorithm & Complexity
 The solver utilizes the Held-Karp dynamic programming approach to ensure global optimality for the selected set of locations. Unlike heuristic methods, this guarantees the shortest possible path.
 The time complexity is: 
 $$O(n^2 2^n)$$
 Where $n$ is the number of locations.
-
----
 
 ---
 
