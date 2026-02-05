@@ -53,11 +53,22 @@ The time complexity is:
 $$O(n^2 2^n)$$
 Where $n$ is the number of locations.
 
-### Path Logic
-For Hamiltonian Paths, the algorithm initializes the DP table by evaluating all possible starting nodes if `FREE_START` is enabled. The final cost is determined by scanning the complete set of visited nodes (full mask) to find the minimum value:
-$$\min_{j \in \{0 \dots n-1\}} DP[\text{full\_mask}][j]$$
+---
 
 ---
 
-## Disclaimer
+## Disclaimer & Limitations
+
+### 1. Usage Limits and Scalability
+To ensure optimal performance and avoid errors, do not input an excessive number of destinations. This tool is subject to three main constraints:
+* **Algorithmic Complexity**: The Held-Karp algorithm has a time complexity of $O(n^2 2^n)$. While it guarantees a global optimum, performance will degrade exponentially beyond 15–20 locations.
+* **API Constraints**: The Google Maps Distance Matrix API typically allows up to 25 origins and 25 destinations per request.
+* **Navigation Limits**: The generated Google Maps URL is subject to Google's waypoint limits.
+
+### 2. Data Accuracy & Route Robustness
+* **API Discrepancies**: Minor differences in distance or duration may exist between the Distance Matrix API and the standard Google Maps consumer app/website.
+* **Sensitivity to Proximity**: When destinations are very close to each other (e.g., within the same city block), these small discrepancies can occasionally result in a different "optimal" sequence. 
+* **Large-Scale Robustness**: The optimization remains highly robust and reliable for journeys where distances between stops are significant, as minor API variations become negligible.
+
+### 3. Costs
 This tool requires a valid Google Maps API key with the Distance Matrix API enabled. Usage may incur costs depending on your Google Cloud Platform billing tier.
