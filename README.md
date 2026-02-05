@@ -12,7 +12,7 @@ This tool computes the most efficient route between multiple locations by solvin
 * **Dual Optimization Modes**: 
     * **Hamiltonian Cycle**: For round-trips where you must return to the starting location.
     * **Hamiltonian Path**: For open-ended journeys where you finish at a different location.
-* **Granular Path Constraints**:
+* **Path Constraints**:
     * **Flexible Start**: Option to either lock the starting point to the first city or allow the algorithm to determine the mathematically optimal starting node.
     * **Flexible Arrival**: Toggle between forcing the trip to end at a specific destination (e.g., your hotel or a station) or letting the solver find the most efficient endpoint.
 * **Multi-Modal Routing**: Supports multiple travel modes including `walking`, `driving`, `bicycling`, and `transit`.
