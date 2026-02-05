@@ -35,7 +35,7 @@ This tool computes the most efficient route between multiple locations by solvin
     ```bash
     pip install googlemaps google-generativeai
     ```
-2.  **API Keys**: Insert your Google Maps and Gemini API keys in the configuration section.
+2.  **API Keys**: Insert your API key in the configuration section.
 3.  **Configuration**:
     * Set `PROBLEM_TYPE`: `1` for Cycle, `2` for Path.
     * Set `FREE_START`: `True` to optimize the starting point, `False` to fix it.
