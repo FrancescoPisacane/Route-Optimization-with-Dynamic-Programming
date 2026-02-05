@@ -1,6 +1,6 @@
 # Route Optimizer
 
-An advanced Python implementation of the Traveling Salesperson Problem (TSP) designed to create globally optimized itineraries using real-world geographic data.
+A Python implementation of the Traveling Salesperson Problem (TSP) designed to create globally optimized itineraries using real-world geographic data.
 
 ## Overview
 This tool computes the most efficient route between multiple locations by solving the TSP via the **Held-Karp algorithm**. It integrates the **Google Maps Distance Matrix API** for precise distance and duration metrics and leverages **Gemini 2.0 Flash** to dynamically discover and format points of interest.
